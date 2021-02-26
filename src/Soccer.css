@@ -1,0 +1,30 @@
+.soccer {
+  height: 100vh;
+  background-color: #1e1e1e;
+  padding: 15px 20px;
+}
+
+.match-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.team-name {
+  font-size: 17px;
+}
+
+.match-stats {
+  position: relative;
+}
+
+.status {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+.result {
+  margin-top: 8px;
+  font-size: 18px;
+  text-align: center;
+}

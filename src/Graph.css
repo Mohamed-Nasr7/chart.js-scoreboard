@@ -1,0 +1,62 @@
+.graph {
+  width: 80vmax;
+  padding: 20px;
+  padding-right: 50px;
+  font-family: "Helvetica", "Roboto", "Arial", "sans-serif";
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  color: #f7ffff;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.teams .status {
+  color: grey;
+  font-size: 13px;
+}
+
+.match-info {
+  color: #f7ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.match-info > p {
+  margin-right: 10px;
+}
+
+@media (max-width: 786px) {
+  .graph {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 590px) {
+  .graph {
+    padding: 10px;
+  }
+  .teams {
+    font-size: 15px;
+  }
+  .match-info {
+    font-size: 14px;
+  }
+  .teams .status {
+    font-size: 12px;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1170px) {
+  canvas {
+    margin: 0 auto;
+    max-height: 317px;
+    max-width: 866px;
+  }
+}

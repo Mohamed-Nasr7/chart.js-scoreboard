@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  margin: 0 auto;
+}
+
+.innings {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 20px;
+  padding-top: 120px;
+  width: 200px;
+}
+
+.innings .team {
+  min-width: 120px;
+  min-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  font-family: "Helvetica", "Roboto", "Arial", "sans-serif";
+  font-size: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.innings .active {
+  background-color: #ffb80c;
+}
+
+@media (max-width: 786px) {
+  .app {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .innings {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 300px;
+  }
+}
